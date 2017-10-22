@@ -15,10 +15,7 @@ shinyUI(fluidPage(
   # Application title
   titlePanel("mtcars from R"),
   textOutput("docu"),
-  verbatimTextOutput("mtcars dataset histograms can be seen by choosing 
-                      appropriate column. The mtcars dataframe has 11 variables (chices listed below) with 
-                      32 observations each"),
-  
+
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
     sidebarPanel(
@@ -36,9 +33,6 @@ shinyUI(fluidPage(
     
     # mtcars plot
     mainPanel(
-      verbatimTextOutput("mtcars dataset histograms can be seen by choosing 
-                      appropriate column. The mtcars dataframe has 11 variables (chices listed below) with 
-                         32 observations each"),
        plotOutput("distPlot")
     )
   )
